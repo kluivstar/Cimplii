@@ -10,9 +10,9 @@ function App() {
       </header>
 
       <main>
-        <section className="hero">
+        <section className="hero bg-blue-500">
           <FiSmile size={64} aria-hidden="true" />
-          <p>Welcome — edit <code>src/App.jsx</code> to get started.</p>
+          <p className='text-3xl font-bold underline'>Welcome — edit <code>src/App.jsx</code> to get started.</p>
         </section>
       </main>
     </div>
