@@ -1,32 +1,15 @@
-/* Minimal app styles */
+/* Global app styles */
 
-#root {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.25rem;
-}
-
-.tagline {
-  margin-top: 0.25rem;
-  color: #888;
-}
-
+/* Hero background (gradient with fallback color) */
 .hero {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
-code {
-  background: rgba(0,0,0,0.05);
-  padding: 0.15rem 0.4rem;
-  border-radius: 4px;
+	background-color: #7fc1db; /* fallback */
+	background: linear-gradient(175deg, rgba(127, 193, 219, 1) 0%, rgba(177, 196, 184, 1) 50%, rgba(240, 239, 228, 1) 100%);
+	padding: 4rem 1rem;
+	color: #0b2431;
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
