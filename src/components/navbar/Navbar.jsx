@@ -4,11 +4,11 @@ import Logo from '../../assets/cimplii.png'
 export default function Navbar() {
 
   return (
-    <main className="p-5">
-      <nav className='flex xl:hidden justify-between items-center px-5'>
+    <main className="px-4 bg-[#7fc1db]">
+      <nav className='flex xl:hidden justify-between items-center -mt-4'>
         {/* Navigation Logo */}
         <div className="">
-          <img src={Logo} alt="Cimplii Logo" width="120" />
+          <img src={Logo} alt="Cimplii Logo" width="100" />
         </div>
         {/* Navigation Links */}
         <Links/>
