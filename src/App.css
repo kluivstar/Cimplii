@@ -3,7 +3,7 @@
 /* Hero background (gradient with fallback color) */
 .hero {
 	background-color: #7fc1db; /* fallback */
-	background: linear-gradient(175deg, rgba(127, 193, 219, 1) 0%, rgba(177, 196, 184, 1) 50%, rgba(240, 239, 228, 1) 100%);
+	background: linear-gradient(175deg, rgba(127, 193, 219, 1) 0%, rgb(203, 219, 209) 40%, rgba(240, 239, 228, 1) 100%);
 	color: #0b2431;
 	
 }

@@ -2,7 +2,11 @@ import React from 'react'
 
 const Button = () => {
   return (
-    <div>Button</div>
+    <div className='mt-4 flex flex-col gap-2 items-center'>
+      <button className="bg-black text-white px-4 py-2 text-[15px] hover:bg-slate-300 hover:text-black">▪ Request a demo</button>
+      <button className="bg-black text-white px-4 py-2 text-[15px] hover:bg-slate-300 hover:text-black">▪ Explore the platform</button>
+
+    </div>
   )
 }
 

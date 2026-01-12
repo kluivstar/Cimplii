@@ -8,10 +8,8 @@ function App() {
   return (
     <div id="root">
       <Navbar />
-      <main>
-        <Hero />
-        <Journal />
-      </main>
+      <Hero />
+      <Journal />
       <Footer />
     </div>
   )
