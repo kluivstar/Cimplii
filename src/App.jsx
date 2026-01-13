@@ -1,4 +1,5 @@
 import './App.css'
+import Features from './components/Features.jsx'
 import Hero from './components/Hero.jsx'
 import Journal from './components/Journal.jsx'
 import Footer from './components/footer/Footer.jsx'
@@ -9,7 +10,7 @@ function App() {
     <div id="root">
       <Navbar />
       <Hero />
-      <Journal />
+      <Features />
       <Footer />
     </div>
   )
