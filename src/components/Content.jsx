@@ -10,25 +10,25 @@ import background from '../assets/content-background.png'
 const contentList = [
     {
         icon: IoMdLink,
-        title: "Decisions start with clarity",
+        title: "Decisions Starts With Clarity",
         description:
         "Clear, reliable data creates confidence. We focus on making sustainability insights easy to understand and trust.",
     },
     {
         icon: FaChartPie,
-        title: "Sustainability connects everything",
+        title: "Sustainability Connects Everything",
         description:
         "Environmental impact doesn’t live in silos. Our tools help teams see how operations, impact, and responsibility link together.",
     },
     {
         icon: FaMagnifyingGlassChart,
-        title: "Momentum matters more than perfection",
+        title: "Momentum Matters More Than Perfection",
         description:
         "Progress happens in steps. We help organizations move forward with practical actions, not unrealistic ideals.",
     },
     {
         icon: FaUncharted,
-        title: "Insights that fuel real growth",
+        title: "Insights That Fuels Real Growth",
         description:
         "When insights are actionable, growth follows. We turn complex data into direction teams can act on.",
     },
@@ -52,7 +52,7 @@ const Content = () => {
           const Icon = content.icon;
 
           return (
-            <div key={index} className="py-3 bg-white rounded-xl py-8 px-5  flex flex-col">
+            <div key={index} className="bg-white rounded-xl py-8 px-5 flex flex-col">
                 {/* Instantiate(turns component reference into actual JSX element react can render) icons after storing in data(container) in the array*/}
               <Icon className="text-2xl mb-2 text-black" />
               <h3 className="text-base font-semibold">

@@ -5,6 +5,7 @@ import Journal from './components/Journal.jsx'
 import Footer from './components/footer/Footer.jsx'
 import Navbar from './components/navbar/Navbar.jsx'
 import Content from './components/Content.jsx'
+import CaseStudy from './components/CaseStudy.jsx'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Features />
       <Content/>
+      <CaseStudy/>
       <Footer />
     </div>
   )
