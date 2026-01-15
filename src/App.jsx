@@ -15,6 +15,7 @@ function App() {
       <Features />
       <Content/>
       <CaseStudy/>
+      <Journal />
       <Footer />
     </div>
   )
