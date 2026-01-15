@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer.jsx'
 import Navbar from './components/navbar/Navbar.jsx'
 import Content from './components/Content.jsx'
 import CaseStudy from './components/CaseStudy.jsx'
+import Testimonial from './components/Testimonial.jsx'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Content/>
       <CaseStudy/>
       <Journal />
+      <Testimonial/>
       <Footer />
     </div>
   )
