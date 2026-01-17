@@ -11,9 +11,9 @@ const Testimonial = () => {
             </div>
             <div>
                 <div className='py-2'>
-                    <span>❝</span>
-                    <h1 className='text-2xl font-semibold py-2'>We finally exprienced what it means to truely work with valuable business data, it help shaped our company to what it has become</h1>
-                    <p>Patrick Star</p>
+                    <span className='text-4xl'>❝</span>
+                    <h1 className='text-2xl font-semibold -mt-4'>We finally exprienced what it means to truely work with valuable business data, it helped shape our company to what it has become.</h1>
+                    <p className='font-bold text-xl mt-5'>Patrick Star</p>
                     <span className='text-slate-700'>CEO, BB Inc.</span>
                 </div>
                 

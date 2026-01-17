@@ -78,7 +78,7 @@ export default function Journal() {
 
             {/* Journal Button */}
             <div className='mx-auto text-center'>
-                <button className="bg-black w-full text-white px-15 py-2 text-[15px] hover:bg-slate-300 hover:text-black">▪ view all articles</button>
+                <button className="bg-black w-full text-white px-15 py-2 text-[15px] hover:bg-slate-300 hover:text-black">▪ View all articles</button>
             </div>
           </article>
         ))}

@@ -7,6 +7,7 @@ import Navbar from './components/navbar/Navbar.jsx'
 import Content from './components/Content.jsx'
 import CaseStudy from './components/CaseStudy.jsx'
 import Testimonial from './components/Testimonial.jsx'
+import CTA from './components/CTA.jsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <CaseStudy/>
       <Journal />
       <Testimonial/>
+      <CTA />
       <Footer />
     </div>
   )
