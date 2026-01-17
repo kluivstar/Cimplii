@@ -22,10 +22,10 @@ const featureData = [
 
 const Features = () => {
   return (
-    <section className='bg-white p-5 md:mt-50'>
+    <section className='bg-white p-5 md:mt-60'>
         {/* Features Headline */}
         <div className='py-10'>
-            <h1 className="text-2xl text-center font-bold">Tools to measure, model, and act on sustainability, without guesswork.</h1>
+            <h1 className="text-2xl text-center md:text-3xl font-bold">Tools to measure, model, and act on sustainability, without guesswork.</h1>
         </div>
 
         <div>
@@ -38,14 +38,14 @@ const Features = () => {
                 {featureData.map((feature, index) => (
                     <div key = {index} className='py-3'>
                         <hr className='text-slate-400'/>
-                        <h2 className='text-[16px] font-semibold'>{feature.title}</h2>
+                        <h2 className='text-[16px] md:text-lg font-semibold'>{feature.title}</h2>
                         <p className='text-black'>{feature.description}</p>
                     </div>
                 ))}
             </div>
             {/* Feature Button */}
             <div className='mx-auto text-center'>
-                <button className="bg-black text-white px-20 py-2 text-[15px] hover:bg-slate-300 hover:text-black">▪ Explore features</button>
+                <button className="bg-black text-white px-20 py-2 text-[15px] hover:bg-slate-300 hover:text-black md:w-full">▪ Explore features</button>
             </div>
         </div>
     </section>
