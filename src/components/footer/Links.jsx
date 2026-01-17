@@ -1,9 +1,13 @@
 export default function Links() {
   return (
-    <nav className="footer-links" style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Contact</a>
+    <nav className="">
+      <div className="flex flex-wrap justify-center gap-4 text-base">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+        <a href="#">Support</a>
+        <a href="#">FAQs</a>
+      </div>
     </nav>
   )
 }
