@@ -22,7 +22,7 @@ const featureData = [
 
 const Features = () => {
   return (
-    <section className='bg-white p-5'>
+    <section className='bg-white p-5 md:mt-50'>
         {/* Features Headline */}
         <div className='py-10'>
             <h1 className="text-2xl text-center font-bold">Tools to measure, model, and act on sustainability, without guesswork.</h1>
