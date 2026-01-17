@@ -37,11 +37,11 @@ const contentList = [
 
 const Content = () => {
   return (
-    <section className='p-5 bg-cover' style={{backgroundImage: `url(${background})`}}>
+    <section className='p-5 bg-cover md:mt-15' style={{backgroundImage: `url(${background})`}}>
         {/* Content Texts */}
         <div className='py-10'>
-            <h1 className="text-2xl text-center font-bold">Built for clarity,</h1>
-            <h2 className="text-2xl font-semibold text-center">
+            <h1 className="text-2xl md:text-5xl md:font-normal text-center font-bold">Built for clarity,</h1>
+            <h2 className="text-2xl md:text-5xl font-semibold text-center">
             Designed for action</h2>
         </div>
 
@@ -54,11 +54,11 @@ const Content = () => {
           return (
             <div key={index} className="bg-white rounded-xl py-8 px-5 flex flex-col">
                 {/* Instantiate(turns component reference into actual JSX element react can render) icons after storing in data(container) in the array*/}
-              <Icon className="text-2xl mb-2 text-black" />
-              <h3 className="text-base font-semibold">
+              <Icon className="text-2xl mb-2 md:text-4xl text-black" />
+              <h3 className="text-base font-semibold md:text-xl">
                 {content.title}
               </h3>
-              <p className="text-black">
+              <p className="text-black md:text-lg">
                 {content.description}
               </p>
             </div>
