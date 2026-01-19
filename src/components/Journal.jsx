@@ -42,12 +42,12 @@ export default function Journal() {
   return (
     <section className="py-10 px-5">
       {/* Journal Header */}
-      <h2 className="text-2xl md:text-3xl font-bold text-center py-5">
+      <h2 className="text-2xl lg:text-4xl md:text-3xl font-bold text-center py-5">
         From the Journal
       </h2>
 
       {/* Journal Content */}
-      <div>
+      <div className="lg:px-50">
         {journalList.map((journal, index) => (
           <div key={index}>
             {/* Top divider */}
