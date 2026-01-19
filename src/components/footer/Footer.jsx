@@ -1,11 +1,11 @@
 import Links from "../footer/Links";
-import FooterImg from "../../assets/content-background.png";
+import FooterImg from "../../assets/footer-image.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-amber-200">
-      <div className="px-10 py-10 flex flex-col items-center gap-4 md:px-5">
-        <div className="md:flex md:flex-row md:gap-24 md:justify-between">
+    <footer className="bg-[#fff645]">
+      <div className="px-10 py-10 lg:py-2 flex flex-col items-center gap-4 md:px-5">
+        <div className="md:flex md:flex-row md:gap-24 lg:gap-85 md:justify-between">
           <Links/>
           <p className="text-base md:text-lg md:font-semibold text-[#2c2c0d] ">© {new Date().getFullYear()} Cimplii. All rights reserved.</p>
         </div>
