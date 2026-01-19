@@ -42,47 +42,54 @@ export default function Journal() {
   return (
     <section className="py-10 px-5">
       {/* Journal Header */}
-      <h2 className="text-2xl font-bold text-center py-5">
+      <h2 className="text-2xl md:text-3xl font-bold text-center py-5">
         From the Journal
       </h2>
 
       {/* Journal Content */}
-      <div className="space-y-5">
+      <div>
         {journalList.map((journal, index) => (
-          <article
-            key={index}
-            className="bg-white overflow-hidden"
-          >
-            {/* Image */}
-            <img
-              src={journal.image}
-              alt={journal.title}
-              className="w-full h-48 object-cover"
-            />
+          <div key={index}>
+            {/* Top divider */}
+            <hr className="border-slate-300" />
 
-            {/* Text */}
-            <div className="py-5 space-y-2">
-              <h3 className="text-base font-semibold">
-                {journal.title}
-              </h3>
-              <p className="text-sm text-black">
-                {journal.description}
-              </p>
+            <article className="py-5 md:flex md:gap-5">
+              {/* Image */}
+              <img
+                src={journal.image}
+                alt={journal.title}
+                className="w-full h-48 object-cover md:w-1/3 md:h-auto md:shrink-0"
+              />
 
-              {/* Genre and Read Time */}
-              <div>
-                <span className="text-xs text-gray-500">{journal.genre} · {journal.readTime} min read</span>
+              {/* Text */}
+              <div className="pt-4 space-y-2">
+                <h3 className="text-base md:text-xl font-semibold">
+                  {journal.title}
+                </h3>
+
+                <p className="text-sm text-black">
+                  {journal.description}
+                </p>
+
+                <span className="text-xs text-gray-500">
+                  {journal.genre} · {journal.readTime} min read
+                </span>
               </div>
-              <hr className='text-slate-400'/>
-            </div>
+            </article>
 
-            {/* Journal Button */}
-            <div className='mx-auto text-center'>
-                <button className="bg-black w-full text-white px-15 py-2 text-[15px] hover:bg-slate-300 hover:text-black">▪ View all articles</button>
-            </div>
-          </article>
+            {/* Bottom divider */}
+            <hr className="border-slate-300" />
+          </div>
         ))}
+      </div>
+
+      {/* Journal Button */}
+      <div className="text-center mt-10">
+        <button className="bg-black text-white py-2 px-6 text-sm hover:bg-slate-300 hover:text-black transition">
+          ▪ View all articles
+        </button>
       </div>
     </section>
   );
 }
+
