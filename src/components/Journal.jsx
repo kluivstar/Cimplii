@@ -67,11 +67,11 @@ export default function Journal() {
                   {journal.title}
                 </h3>
 
-                <p className="text-sm text-black">
+                <p className="text-sm text-black md:text-base">
                   {journal.description}
                 </p>
 
-                <span className="text-xs text-gray-500">
+                <span className="text-xs md:text-base text-gray-500">
                   {journal.genre} · {journal.readTime} min read
                 </span>
               </div>
@@ -85,7 +85,7 @@ export default function Journal() {
 
       {/* Journal Button */}
       <div className="text-center mt-10">
-        <button className="bg-black text-white py-2 px-6 text-sm hover:bg-slate-300 hover:text-black transition">
+        <button className="bg-black text-white py-2 px-6 text-sm hover:bg-slate-300 hover:text-black transition md:text-base">
           ▪ View all articles
         </button>
       </div>
