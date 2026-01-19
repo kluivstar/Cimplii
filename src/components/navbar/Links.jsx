@@ -32,8 +32,8 @@ export default function Links() {
   return (
     <header>
         {/* Default - Desktop Menu */}
-        <nav className="hidden">
-            <ul className="flex items-center m-0 p-0 list-none">
+        <nav className="hidden lg:flex">
+            <ul className="flex gap-6 font-semibold items-center m-0 p-0 list-none">
                 {links.map((link) => (
                 <li key={link.title}>
                     <a
@@ -48,7 +48,7 @@ export default function Links() {
         </nav>
 
         {/* Mobile Menu Toggle */}
-        <nav className="xl:hidden">
+        <nav className="lg:hidden">
             <img 
                 src={toggle ? close : open}
                 className="cursor-pointer transition-transform duration-300 ease-in-out" 
