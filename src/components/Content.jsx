@@ -20,12 +20,7 @@ const contentList = [
         description:
         "Environmental impact doesn’t live in silos. Our tools help teams see how operations, impact, and responsibility link together.",
     },
-    {
-        icon: FaMagnifyingGlassChart,
-        title: "Momentum Matters More Than Perfection",
-        description:
-        "Progress happens in steps. We help organizations move forward with practical actions, not unrealistic ideals.",
-    },
+    
     {
         icon: FaUncharted,
         title: "Insights That Fuels Real Growth",
@@ -37,16 +32,16 @@ const contentList = [
 
 const Content = () => {
   return (
-    <section className='p-5 bg-cover md:mt-15' style={{backgroundImage: `url(${background})`}}>
+    <section className='p-5 lg:py-12 bg-cover md:mt-15' style={{backgroundImage: `url(${background})`}}>
         {/* Content Texts */}
         <div className='py-10'>
-            <h1 className="text-2xl md:text-5xl md:font-normal text-center font-bold">Built for clarity,</h1>
-            <h2 className="text-2xl md:text-5xl font-semibold text-center">
+            <h1 className="text-2xl md:text-5xl lg:text-7xl md:font-normal text-center font-bold">Built for clarity,</h1>
+            <h2 className="text-2xl md:text-5xl font-semibold text-center lg:text-7xl">
             Designed for action</h2>
         </div>
 
         {/* Content List */}
-        <div className="py-10 space-y-5">
+        <div className="py-10 grid gap-6 lg:grid-cols-3">
         {contentList.map((content, index) => {
           {/* Icon-variable is treated is rendered as a component and rendered - dynamic component rendering*/}
           const Icon = content.icon;
