@@ -4,7 +4,7 @@ import TestimonialImage from '../assets/testImg.png';
 const Testimonial = () => {
   return (
     <section>
-        <div className='p-5'>
+        <div className='p-5 md:flex md:gap-10 md:py-8'>
             {/* Testimonial Image */}
             <div>
                 <img src={TestimonialImage} alt="Testimonial" />

@@ -4,13 +4,13 @@ import FooterImg from "../../assets/content-background.png";
 export default function Footer() {
   return (
     <footer className="bg-amber-200">
-      <div className="px-10 py-10 flex flex-col items-center gap-4">
-        <div>
+      <div className="px-10 py-10 flex flex-col items-center gap-4 md:px-5">
+        <div className="md:flex md:flex-row md:gap-24 md:justify-between">
           <Links/>
-          <p className="text-base">© {new Date().getFullYear()} Cimplii. All rights reserved.</p>
+          <p className="text-base md:text-lg md:font-semibold text-[#2c2c0d] ">© {new Date().getFullYear()} Cimplii. All rights reserved.</p>
         </div>
-        <img src={FooterImg} className="w-full h-25" alt="Footer Image" />
-        <h1 className="text-[85px] -mt-8 font-bold text-slate-900 -mb-10">Cimplii</h1>
+        <img src={FooterImg} className="w-full h-25 md:h-60" alt="Footer Image" />
+        <h1 className="text-[85px] -mt-8 font-bold text-[#2c2c0d] -mb-10 md:text-[250px] md:-mt-15">Cimplii</h1>
       </div>
     </footer>
   )

@@ -60,13 +60,13 @@ export default function Links() {
 
         {/* Mobile Menu Links*/}
         {toggle && (
-            <nav className="xl:hidden absolute top-18 left-0 bg-white shadow-lg px-5 w-full z-10 h-[calc(100vh-100px)] leading-10  py-10 ">
+            <nav className="xl:hidden absolute top-18 left-0 bg-white shadow-lg px-5 md:px-10 w-full z-10 h-[calc(100vh-100px)] leading-10  py-10 ">
                 <ul className="flex flex-col items-start list-none space-y-3 ">
                     {links.map((link) => (
                         <li key={link.title}>
                             <a
                                 href={link.path}
-                                className="hover:text-blue-600 transition-colors hover:underline text-[14px] text-black duration-300"
+                                className="hover:text-blue-600 transition-colors hover:underline text-[14px] md:text-lg text-black duration-300"
                             >
                                 {link.title}
                             </a>
