@@ -22,10 +22,10 @@ const featureData = [
 
 const Features = () => {
   return (
-    <section className='bg-white p-5 md:mt-60'>
+    <section className='bg-white p-5 md:mt-60 xl:mt-110'>
         {/* Features Headline */}
         <div className='py-10 lg:text-center'>
-            <h1 className="mx-auto text-2xl text-center md:text-3xl font-bold lg:w-1/2">
+            <h1 className="mx-auto text-2xl text-center md:text-3xl font-bold lg:w-1/2 xl:text-4xl">
             Tools to measure, model, and act on sustainability, without guesswork.
             </h1>
 
@@ -52,7 +52,7 @@ const Features = () => {
                 </div>
                 {/* Feature Button */}
                 <div className='mx-auto text-center lg:text-left'>
-                    <button className="bg-black text-white px-20 py-2 text-[15px] hover:bg-slate-300 hover:text-black md:w-full lg:w-1/2 lg:px-10 lg:py-2">▪ Explore features</button>
+                    <button className="bg-black text-white px-20 py-2 text-[15px] hover:bg-slate-300 hover:text-black md:w-full lg:w-1/2 lg:px-10 lg:py-2 xl:text-lg">▪ Explore features</button>
                 </div>
             </div>
         </div>
