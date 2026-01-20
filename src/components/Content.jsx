@@ -32,7 +32,7 @@ const contentList = [
 
 const Content = () => {
   return (
-    <section className='p-5 lg:py-12 bg-cover md:mt-15' style={{backgroundImage: `url(${background})`}}>
+    <section className='p-5 lg:py-12 2xl:py-20 bg-cover md:mt-15' style={{backgroundImage: `url(${background})`}}>
         {/* Content Texts */}
         <div className='py-10'>
             <h1 className="text-2xl md:text-5xl lg:text-7xl md:font-normal text-center font-bold">Built for clarity,</h1>
@@ -41,7 +41,7 @@ const Content = () => {
         </div>
 
         {/* Content List */}
-        <div className="py-10 grid gap-6 lg:grid-cols-3">
+        <div className="py-10 grid gap-6 lg:grid-cols-3 2xl:w-1/2 2xl:mx-auto">
         {contentList.map((content, index) => {
           {/* Icon-variable is treated is rendered as a component and rendered - dynamic component rendering*/}
           const Icon = content.icon;
@@ -49,11 +49,11 @@ const Content = () => {
           return (
             <div key={index} className="bg-white rounded-xl py-8 px-5 flex flex-col">
                 {/* Instantiate(turns component reference into actual JSX element react can render) icons after storing in data(container) in the array*/}
-              <Icon className="text-2xl mb-2 md:text-4xl text-black" />
-              <h3 className="text-base font-semibold md:text-xl">
+              <Icon className="text-2xl mb-2 md:text-4xl text-black 2xl:text-5xl" />
+              <h3 className="text-base font-semibold md:text-xl 2xl:text-3xl">
                 {content.title}
               </h3>
-              <p className="text-black md:text-lg">
+              <p className="text-black md:text-lg 2xl:text-2xl">
                 {content.description}
               </p>
             </div>
