@@ -9,8 +9,8 @@ const Testimonial = () => {
             <div className='lg:w-1/2'>
                 <img src={TestimonialImage} alt="Testimonial" />
             </div>
-            <div className='lg:w-1/2'>
-                <div className='py-2 lg:mt-10 lg:px-12'>
+            <div className='lg:w-1/2 lg:mt-10  xl:content-center'>
+                <div className='py-2 lg:px-12'>
                     <span className='text-4xl'>❝</span>
                     <h1 className='text-2xl font-semibold -mt-4 lg:text-5xl'>We finally exprienced what it means to truely work with valuable business data.</h1>
                     <p className='font-bold text-xl mt-5'>Patrick Star</p>

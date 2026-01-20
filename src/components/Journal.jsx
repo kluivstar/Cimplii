@@ -63,11 +63,11 @@ export default function Journal() {
 
               {/* Text */}
               <div className="pt-4 space-y-2">
-                <h3 className="text-base md:text-xl font-semibold">
+                <h3 className="text-base md:text-xl xl:text-2xl font-semibold">
                   {journal.title}
                 </h3>
 
-                <p className="text-sm text-black md:text-base">
+                <p className="text-sm text-black md:text-base xl:text-lg">
                   {journal.description}
                 </p>
 
