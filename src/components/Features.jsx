@@ -26,7 +26,7 @@ const featureData = [
 
 const Features = () => {
   return (
-    <section className='bg-white p-5 md:mt-60 xl:py-20 2xl:py-40'>
+    <section className='bg-white px-5 py-20 md:mt-60 xl:py-20 2xl:py-40'>
         {/* Features Headline */}
         <div className='py-10 lg:text-center'>
             <h1 className="mx-auto text-2xl text-center md:text-3xl font-bold lg:w-1/2 xl:text-4xl 2xl:text-5xl">

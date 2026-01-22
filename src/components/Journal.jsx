@@ -2,6 +2,8 @@ import JournalImgOne from "../assets/journal-image1.jpg";
 import JournalImgTwo from "../assets/journal-image2.jpg";
 import JournalImgThree from "../assets/journal-image3.jpg";
 import JournalImgFour from "../assets/journal-image4.jpg";
+import JournalImgFive from "../assets/journal-image5.jpg";
+import JournalImgSix from "../assets/journal-image6.jpg";
 
 const journalList = [
   {
@@ -36,6 +38,22 @@ const journalList = [
     genre: "Article",
     readTime: 5
   },
+  {
+    image: JournalImgFive,
+    title: "Nothing Drives Growth Like Data-Driven Decisions",
+    description:
+      "Every decision backed by data propels your business forward with confidence and clarity.",
+    genre: "Article",
+    readTime: 6
+  },
+  {
+    image: JournalImgSix,
+    title: "Real Data for Real Business Impact",
+    description:
+      "All-in-one sustainability solutions that deliver measurable results for modern businesses.",
+    genre: "News",
+    readTime: 8
+  },
 ];
 
 export default function Journal() {
@@ -47,7 +65,7 @@ export default function Journal() {
       </h2>
 
       {/* Journal Content */}
-      <div className="lg:px-50">
+      <div className="lg:px-50 2xl:w-3/4 2xl:content-center 2xl:flex">
         {journalList.map((journal, index) => (
           <div key={index}>
             {/* Top divider */}
