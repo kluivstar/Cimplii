@@ -101,15 +101,20 @@ const JournalPage = () => {
               </div>
             </article>
 
-            {/* Bottom divider */}
-            <hr className="border-slate-300" />
           </div>
         ))}
       </div>
 
-      {/* Journal Button */}
-      <div className="text-center mt-10">
-        
+      {/* Newsletter Section */}
+      <div className="text-center py-10">
+        <h2 className="text-2xl lg:text-4xl md:text-3xl font-bold text-center py-2">
+        Subscribe to Complii Journal
+      </h2>
+        <div className="text-center">
+            <button className="bg-black text-white py-2 px-6 text-sm hover:bg-slate-300 hover:text-black transition md:text-base">
+            ▪ Sign up to newsletter
+            </button>
+      </div>
       </div>
     </section>
   )
