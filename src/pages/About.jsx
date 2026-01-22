@@ -92,9 +92,9 @@ const About = () => {
         <div className='lg:w-1/2'>
             <img src={AboutImg} alt="" className='lg:h-full'/>
         </div>
-        <div className='px-5 py-8'>
-            <span className='text-xl text-slate-800'>Our mission</span>
-            <h1 className='text-[25px] md:text-xl 2xl:text-3xl font-semibold'>We are big on practices that improves the overall tragjectory or any brand, business that focused and all about unveiling what real data can do for them now and in the future</h1>
+        <div className='px-5 py-8 md:px-35 md:py-20'>
+            <span className='text-xl md:2xl xl:text-3xl text-slate-800'>Our mission</span>
+            <h1 className='text-[25px] md:text-4xl md:text-semibold 2xl:text-5xl font-semibold'>We are big on practices that improves the overall tragjectory or any brand, business that focused and all about unveiling what real data can do for them now and in the future</h1>
             <button className="bg-black w-full text-white py-3 px-6 text-base md:text-2xl hover:bg-slate-300 hover:text-black transition md:py-3 mt-5 font-semibold">
             ▪ Meet the team
             </button>
@@ -104,7 +104,7 @@ const About = () => {
        {/* About Values session */}
        <div>
             <div className=''>
-                <h1 className=' text-center text-3xl md:text-xl 2xl:text-3xl font-semibold pt-10'>Our values
+                <h1 className=' text-center text-3xl md:text-3xl 2xl:text-3xl font-semibold pt-10'>Our values
             </h1>
             </div>
             <div className="py-10 grid gap-6 lg:grid-cols-3 2xl:w-1/2 2xl:mx-auto p-4">
@@ -113,7 +113,7 @@ const About = () => {
                 const Icon = content.icon;
 
                 return (
-                    <div key={index} className="bg-[#f5f7fa] rounded-xl py-8 px-5 flex flex-col">
+                    <div key={index} className="bg-[#f5f7fa] rounded-xl py-8 px-5 md:px-8 flex flex-col">
                         {/* Instantiate(turns component reference into actual JSX element react can render) icons after storing in data(container) in the array*/}
                         <Icon className="text-3xl mb-2 md:text-4xl text-black 2xl:text-5xl" />
                         <h3 className="text-xl font-semibold md:text-xl 2xl:text-3xl">
@@ -135,15 +135,15 @@ const About = () => {
         <div>
             <div className='p-5 md:flex md:gap-10 md:py-8 lg:px-5 lg:py-30'>
             {/* Testimonial Image */}
-            <div className='lg:w-1/2'>
+            <div className='lg:w-1/2 md:w-[50%]'>
                 <img src={AboutImgTwo} alt="Testimonial" />
             </div>
-            <div className='lg:w-1/2 lg:mt-10  xl:content-center'>
+            <div className='lg:w-1/2 md:w-[50%] md:mt-10  xl:content-center'>
                 <div className='py-2 lg:px-12'>
                     <span className='text-xl text-slate-600'>Founder's story</span>
-                    <h1 className='text-2xl font-semibold lg:text-5xl'>Gregory Redwood</h1>
-                    <p className='text-lg pt-5'>Greogry start Complii as a medium by which companies can finally harness the true might of data backed insight. He set out to be a light that shine rays that springs growths for companies.</p>
-                    <span className='text-slate-700'>CEO, BB Inc.</span>
+                    <h1 className='text-2xl md:text-3xl font-semibold lg:text-5xl'>Gregory Redwood</h1>
+                    <p className='text-lg md:text-2xl pt-5 md:w-[90%]'>Greogry start Complii as a medium by which companies can finally harness the true might of data backed insight. He set out to be a light that shine rays that springs growths for companies. Its all about being ahead with data that guards the every step your company take in its industry.</p>
+                    <span className='text-slate-700'>CEO, Complii Inc.</span>
                 </div>
                 
             </div>
@@ -153,10 +153,11 @@ const About = () => {
         {/* Teams */}
         <div className='bg-[#f5f7fa]'>
             <div className='p-5'>
-                <h1 className='text-4xl md:text-xl 2xl:text-3xl font-semibold '>Meet the team
+                <h1 className='text-4xl md:text-5xl 2xl:text-4xl font-semibold md:py-10'>Meet the team
             </h1>
             </div>
-            <div className="grid gap-6 lg:grid-cols-3 2xl:w-1/2 2xl:mx-auto">
+
+            <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-3 2xl:w-1/2 2xl:mx-auto">
                 {teamMembers.map((person, index) => {
                 {/* Icon-variable is treated is rendered as a component and rendered - dynamic component rendering*/}
 
@@ -183,11 +184,11 @@ const About = () => {
         {/* About Newsletter */}
         <div className="text-center py-20 bg-slate-100 ">
             <h2 className="text-2xl lg:text-4xl md:text-4xl font-bold text-center py-2">
-            Subscribe to Complii Journal
+            Want to join the team ?
             </h2>
             <div className="text-center">
                 <button className="bg-black text-white py-2 px-6 text-base md:text-2xl hover:bg-slate-300 hover:text-black transition md:py-3">
-                ▪ Sign up to newsletter
+                ▪ View open roles
                 </button>
             </div>
         </div>
