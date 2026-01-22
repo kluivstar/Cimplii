@@ -114,7 +114,7 @@ const JournalPage = () => {
             <button className="bg-black text-white py-2 px-6 text-base md:text-2xl hover:bg-slate-300 hover:text-black transition md:py-3">
             ▪ Sign up to newsletter
             </button>
-      </div>
+        </div>
       </div>
     </section>
   )
