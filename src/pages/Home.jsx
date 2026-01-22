@@ -5,6 +5,7 @@ import CaseStudy from "../components/CaseStudy";
 import Journal from "../components/Journal";
 import Testimonial from "../components/Testimonial";
 import CTA from "../components/CTA";
+import "../index.css"
 
 export default function Home() {
   return (

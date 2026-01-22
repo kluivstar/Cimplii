@@ -1,28 +1,22 @@
-import './App.css'
-import Features from './components/Features.jsx'
-import Hero from './components/Hero.jsx'
-import Journal from './components/Journal.jsx'
-import Footer from './components/footer/Footer.jsx'
-import Navbar from './components/navbar/Navbar.jsx'
-import Content from './components/Content.jsx'
-import CaseStudy from './components/CaseStudy.jsx'
-import Testimonial from './components/Testimonial.jsx'
-import CTA from './components/CTA.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+
+import Home from "./pages/Home";
+import JournalPage from "./pages/JournalPage";
+import Career from "./pages/Career";
+import About from "./pages/About";
 
 function App() {
   return (
-    <div id="root">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Content/>
-      <CaseStudy/>
-      <Journal />
-      <Testimonial/>
-      <CTA />
-      <Footer />
-    </div>
-  )
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/journal" element={<JournalPage />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/about" element={<About />} />
+        </Route>
+      </Routes>
+  );
 }
 
-export default App
+export default App;
