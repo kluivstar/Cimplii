@@ -68,7 +68,7 @@ export default function Links() {
                         <li key={link.title}>
                             <a
                                 href={link.path}
-                                className="hover:text-blue-600 transition-colors hover:underline text-[14px] md:text-lg text-black duration-300"
+                                className="hover:text-blue-600 transition-colors hover:underline text-[16px] md:text-lg text-black duration-300"
                             >
                                 {link.title}
                             </a>

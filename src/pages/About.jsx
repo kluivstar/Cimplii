@@ -93,8 +93,8 @@ const About = () => {
             <img src={AboutImg} alt="" className='lg:h-full'/>
         </div>
         <div className='px-5 py-8'>
-            <span className='text-base text-slate-800'>Our mission</span>
-            <h1 className='text-[20px] md:text-xl 2xl:text-3xl font-semibold'>We are big on practices that improves the overall tragjectory or any brand, business that focused and all about unveiling what real data can do for them now and in the future</h1>
+            <span className='text-xl text-slate-800'>Our mission</span>
+            <h1 className='text-[25px] md:text-xl 2xl:text-3xl font-semibold'>We are big on practices that improves the overall tragjectory or any brand, business that focused and all about unveiling what real data can do for them now and in the future</h1>
             <button className="bg-black w-full text-white py-3 px-6 text-base md:text-2xl hover:bg-slate-300 hover:text-black transition md:py-3 mt-5 font-semibold">
             ▪ Meet the team
             </button>
@@ -119,7 +119,7 @@ const About = () => {
                         <h3 className="text-xl font-semibold md:text-xl 2xl:text-3xl">
                             {content.title}
                         </h3>
-                        <p className="text-black text-lg md:text-lg 2xl:text-2xl">
+                        <p className="text-black text-lg md:text-xl 2xl:text-2xl">
                             {content.description}
                         </p>
                         
