@@ -77,12 +77,12 @@ const JournalPage = () => {
           <div key={index}>
             {/* Top divider */}
 
-            <article className="py-5 md:flex md:gap-5">
+            <article className="py-5 md:flex-col md:gap-5">
               {/* Image */}
               <img
                 src={journal.image}
                 alt={journal.title}
-                className="w-full h-48 object-cover md:w-1/3 md:h-auto md:shrink-0"
+                className="w-full h-48 object-cover md:w-full md:h-auto md:shrink-0"
               />
 
               {/* Text */}
@@ -91,11 +91,11 @@ const JournalPage = () => {
                   {journal.title}
                 </h3>
 
-                <p className="text-sm text-black md:text-base xl:text-lg">
+                <p className="text-sm text-black md:text-lg xl:text-lg">
                   {journal.description}
                 </p>
 
-                <span className="text-base md:text-base text-gray-500">
+                <span className="text-base md:text-lg text-gray-500">
                   {journal.genre} · {journal.readTime} min read
                 </span>
               </div>
