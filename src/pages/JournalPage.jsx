@@ -62,8 +62,8 @@ const journalList = [
 
 const JournalPage = () => {
   return (
-    <section className="p-4">
-      <div>
+    <section className="">
+      <div className='p-4'>
             <img src={JournalHeader} alt="Journal Header" className="w-full h-full object-contain mb-5"/>
       </div>
       {/* Journal Header */}
@@ -72,7 +72,7 @@ const JournalPage = () => {
       </h2>
 
       {/* Journal Content */}
-      <div className="lg:px-24 2xl:w-4/5 grid lg:grid-cols-2 lg:gap-10 mx-auto items-stretch">
+      <div className="lg:px-24 xl:py-10 xl:pb-20 2xl:w-4/5 grid lg:grid-cols-2 lg:gap-10 mx-auto items-stretch">
 
         {journalList.map((journal, index) => (
             <article
@@ -83,7 +83,7 @@ const JournalPage = () => {
             <img
                 src={journal.image}
                 alt={journal.title}
-                className="w-full h-48 md:h-56 object-cover"
+                className="w-full h-48 md:h-56 xl:h-90 object-cover"
             />
 
             {/* Text */}
@@ -106,7 +106,7 @@ const JournalPage = () => {
 
 
       {/* Newsletter Section */}
-      <div className="text-center py-10">
+      <div className="text-center py-20 bg-slate-100 ">
         <h2 className="text-2xl lg:text-4xl md:text-4xl font-bold text-center py-2">
         Subscribe to Complii Journal
       </h2>
