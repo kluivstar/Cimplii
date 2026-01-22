@@ -67,51 +67,51 @@ const JournalPage = () => {
             <img src={JournalHeader} alt="Journal Header" className="w-full h-full object-contain mb-5"/>
       </div>
       {/* Journal Header */}
-      <h2 className="text-2xl lg:text-4xl md:text-3xl font-bold text-center py-5">
+      <h2 className="text-2xl lg:text-4xl md:text-3xl font-bold text-center py-5 lg:py-10">
         Latest articles
       </h2>
 
       {/* Journal Content */}
-      <div className="lg:px-50 2xl:w-3/4 2xl:content-center 2xl:flex">
-        {journalList.map((journal, index) => (
-          <div key={index}>
-            {/* Top divider */}
+      <div className="lg:px-24 2xl:w-4/5 grid lg:grid-cols-2 lg:gap-10 mx-auto items-stretch">
 
-            <article className="py-5 md:flex-col md:gap-5">
-              {/* Image */}
-              <img
+        {journalList.map((journal, index) => (
+            <article
+            key={index}
+            className="h-full flex flex-col"
+            >
+            {/* Image */}
+            <img
                 src={journal.image}
                 alt={journal.title}
-                className="w-full h-48 object-cover md:w-full md:h-auto md:shrink-0"
-              />
+                className="w-full h-48 md:h-56 object-cover"
+            />
 
-              {/* Text */}
-              <div className="pt-4 space-y-2">
+            {/* Text */}
+            <div className="pt-4 space-y-2 flex-1">
                 <h3 className="text-lg md:text-xl xl:text-2xl font-semibold">
-                  {journal.title}
+                {journal.title}
                 </h3>
 
-                <p className="text-sm text-black md:text-lg xl:text-lg">
-                  {journal.description}
+                <p className="text-sm text-black md:text-lg">
+                {journal.description}
                 </p>
 
                 <span className="text-base md:text-lg text-gray-500">
-                  {journal.genre} · {journal.readTime} min read
+                {journal.genre} · {journal.readTime} min read
                 </span>
-              </div>
+            </div>
             </article>
-
-          </div>
         ))}
       </div>
 
+
       {/* Newsletter Section */}
       <div className="text-center py-10">
-        <h2 className="text-2xl lg:text-4xl md:text-3xl font-bold text-center py-2">
+        <h2 className="text-2xl lg:text-4xl md:text-4xl font-bold text-center py-2">
         Subscribe to Complii Journal
       </h2>
         <div className="text-center">
-            <button className="bg-black text-white py-2 px-6 text-sm hover:bg-slate-300 hover:text-black transition md:text-base">
+            <button className="bg-black text-white py-2 px-6 text-base md:text-2xl hover:bg-slate-300 hover:text-black transition md:py-3">
             ▪ Sign up to newsletter
             </button>
       </div>
