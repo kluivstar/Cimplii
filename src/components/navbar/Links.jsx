@@ -4,23 +4,25 @@ import close from '../../assets/close.svg'
 
 const links = [
     {
-        title: "Product",
-        path: "/",
+        title: "About",
+        path: "/about",
     },
+    
     {
         title: "Journal",
-        path: "/",
+        path: "/journal",
     },
-    {
-        title: "About",
-        path: "/",
-    },
+
     {
         title: "Careers",
-        path: "/",
+        path: "/careers",
     },
     {
         title: "Get Started ↦",
+        path: "/",
+    },
+    {
+        title: "Product",
         path: "/",
     },
 ];

@@ -6,6 +6,7 @@ import "./App.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    {/* Turn routing on - enable URL-based navigation - allow Routes, Route work */}
     <BrowserRouter>
       <App />
     </BrowserRouter>

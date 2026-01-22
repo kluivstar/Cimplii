@@ -10,6 +10,7 @@ import "../index.css"
 export default function Home() {
   return (
     <>
+    {/* Page content */}
       <Hero />
       <Features />
       <Content />

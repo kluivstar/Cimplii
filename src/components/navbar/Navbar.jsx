@@ -1,5 +1,6 @@
 import Links from './Links'
 import Logo from '../../assets/cimplii.png'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -7,9 +8,9 @@ export default function Navbar() {
     <main className="px-4 bg-[#7fc1dbe1]">
       <nav className='flex justify-between items-center -mt-4 2xl:px-5'>
         {/* Navigation Logo */}
-        <div className="">
+        <Link to="/">
           <img src={Logo} className='xl:w-32 2xl:w-40' alt="Cimplii Logo" width="100" />
-        </div>
+        </Link>
         {/* Navigation Links */}
         <Links/>
       </nav>
