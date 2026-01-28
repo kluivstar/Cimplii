@@ -18,13 +18,14 @@ const links = [
         path: "/careers",
     },
     {
-        title: "Get Started ↦",
+        title: "Products",
         path: "/",
     },
     {
-        title: "Product",
+        title: "Get Started ↦",
         path: "/",
     },
+    
 ];
 
 export default function Links() {
