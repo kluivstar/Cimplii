@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImg from "../assets/about-image-1.jpg"
+import AboutImg from "../assets/about-image-1.png"
 import AboutImgTwo from '../assets/about-image-2.jpg'
 import { HiOutlineGlobe } from "react-icons/hi";
 import { IoMdLink } from "react-icons/io";
@@ -87,18 +87,18 @@ const About = () => {
   return (
     <section>
         {/* About Hero */}
-       <div className='flex flex-col'>
-        {/* About img */}
-        <div className='lg:w-1/2'>
-            <img src={AboutImg} alt="" className='lg:h-full'/>
-        </div>
-        <div className='px-5 py-8 md:px-35 md:py-20'>
-            <span className='text-xl md:2xl xl:text-3xl text-slate-800'>Our mission</span>
-            <h1 className='text-[25px] md:text-4xl md:text-semibold 2xl:text-5xl font-semibold'>We are big on practices that improves the overall tragjectory or any brand, business that focused and all about unveiling what real data can do for them now and in the future</h1>
-            <button className="bg-black w-full text-white py-3 px-6 text-base md:text-2xl hover:bg-slate-300 hover:text-black transition md:py-3 mt-5 font-semibold">
-            ▪ Meet the team
-            </button>
-        </div>
+       <div className='flex flex-col lg:flex-row'>
+            {/* About img */}
+            <div className='lg:w-1/2 h-162 hero lg:mx-auto lg:items-center'>
+                <img src={AboutImg} alt="" className='lg:pt-30'/>
+            </div>
+            <div className='px-5 py-8 md:px-35 md:py-20 lg:w-1/2 lg:px-20 lg:py-50'>
+                <span className='text-xl md:2xl xl:text-3xl text-slate-800 lg:w-1/2'>Our mission</span>
+                <h1 className='text-[25px] md:text-3xl md:text-semibold 2xl:text-5xl font-semibold'>We are big on practices that improves the overall tragjectory or any brand, business that focused and all about unveiling what real data can do for them now and in the future</h1>
+                <button className="bg-black w-full text-white py-3 px-6 text-base md:text-2xl hover:bg-slate-300 hover:text-black transition md:py-3 mt-5 font-semibold lg:text-xl lg:w-1/2">
+                ▪ Meet the team
+                </button>
+            </div>
        </div>
 
        {/* About Values session */}
