@@ -64,7 +64,7 @@ const JournalPage = () => {
   return (
     <section className="">
       <div className='p-4'>
-            <img src={JournalHeader} alt="Journal Header" className="w-full h-full object-contain mb-5"/>
+            <img src={JournalHeader} alt="Journal image" className="w-full h-full object-contain mb-5"/>
       </div>
       {/* Journal Header */}
       <h2 className="text-2xl lg:text-4xl md:text-3xl font-bold text-center py-5 lg:py-10">

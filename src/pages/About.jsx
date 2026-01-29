@@ -97,7 +97,7 @@ const About = () => {
        <div className='flex flex-col lg:flex-row'>
             {/* About img */}
             <div className='lg:w-1/2 h-162 hero lg:mx-auto lg:items-center'>
-                <img src={AboutImg} alt="" className='lg:pt-30'/>
+                <img src={AboutImg} alt="about page image" className='lg:pt-30'/>
             </div>
             <div className='px-5 py-8 md:px-35 md:py-20 lg:w-1/2 lg:px-20 lg:py-50'>
                 <span className='text-xl md:2xl xl:text-3xl text-slate-800 lg:w-1/2'>Our mission</span>
@@ -143,7 +143,7 @@ const About = () => {
             <div className='p-5 md:flex md:gap-10 md:py-8 lg:px-5 lg:py-30'>
             {/* Testimonial Image */}
             <div className='lg:w-1/2 md:w-[50%]'>
-                <img src={AboutImgTwo} alt="Testimonial" />
+                <img src={AboutImgTwo} alt="about image" />
             </div>
             <div className='lg:w-1/2 md:w-[50%] md:mt-10  xl:content-center'>
                 <div className='py-2 lg:px-12'>

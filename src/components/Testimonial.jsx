@@ -7,7 +7,7 @@ const Testimonial = () => {
         <div className='p-5 md:flex md:gap-10 md:py-8 lg:px-5 lg:py-30'>
             {/* Testimonial Image */}
             <div className='lg:w-1/2'>
-                <img src={TestimonialImage} alt="Testimonial" />
+                <img src={TestimonialImage} alt="Testimonial image" />
             </div>
             <div className='lg:w-1/2 lg:mt-10  xl:content-center'>
                 <div className='py-2 lg:px-12'>

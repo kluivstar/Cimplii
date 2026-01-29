@@ -21,7 +21,7 @@ export default function Hero() {
 
         {/* Hero Image */}
         <div className="flex mt-5 md:mt-0 lg:px-20 2xl:px-0 lg:-mt-38 xl:ml-24 2xl:ml-0 2xl:justify-center">
-          <img src={HeroImg} className="outline-black" alt="" />
+          <img src={HeroImg} className="outline-black" alt="Hero image for homepage" />
         </div>
       </div>
     </section>

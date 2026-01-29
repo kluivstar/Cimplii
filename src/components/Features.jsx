@@ -38,7 +38,7 @@ const Features = () => {
         <div className='lg:flex lg:flex-row lg:gap-10'>
             {/* Features Image */}
             <div className='lg:w-1/2'>
-                <img src={FeatureImage} alt="" className='lg:h-full'/>
+                <img src={FeatureImage} alt="features image" className='lg:h-full'/>
             </div>
 
             {/* Features list and Button*/}

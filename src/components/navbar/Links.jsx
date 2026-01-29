@@ -55,7 +55,7 @@ export default function Links() {
             <img 
                 src={toggle ? close : open}
                 className="cursor-pointer transition-transform duration-300 ease-in-out" 
-                alt="" 
+                alt="menu toggle" 
                 width={24}
                 onClick={() => {setToggle(!toggle)}}
             />

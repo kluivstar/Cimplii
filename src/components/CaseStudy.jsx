@@ -7,7 +7,7 @@ const CaseStudy = () => {
         <div className='bg-slate-50 rounded-lg flex flex-col leading-6 py-8 px-5 md:flex-row gap-6 xl:gap-2'>
             {/* Session Image */}
             <div>
-                <img className='rounded-md lg:h-full' src={Image} alt="" />
+                <img className='rounded-md lg:h-full' src={Image} alt="case study image" />
             </div>
 
             {/* Session Details */}
