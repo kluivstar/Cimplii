@@ -58,6 +58,16 @@ const journalList = [
 
 export default function Journal() {
   return (
+    <>
+    {/* using Helmet to inject metadata dynamically as route/pages change - its done cos React is a SPA and only has one index.html- This is called page level SEO metadata management */}
+    <Helmet>
+        <title>Journal — Insights & Analysis for Business Leaders | Complii</title>
+        <meta
+          name="description"
+          content="Explore articles, tools, and insights on sustainability, data-driven decisions, and long-term business growth."
+        />
+     </Helmet>
+
     <section className="py-10 px-5">
       {/* Journal Header */}
       <h2 className="text-2xl lg:text-4xl md:text-3xl font-bold text-center py-5">
@@ -108,6 +118,7 @@ export default function Journal() {
         </button>
       </div>
     </section>
+    </>
   );
 }
 

@@ -85,6 +85,13 @@ const contentList = [
 
 const About = () => {
   return (
+    <>
+    {/* using Helmet to inject metadata dynamically as route/pages change - its done cos React is a SPA and only has one index.html- This is called page level SEO metadata management */}
+    <Helmet>
+        <title>About Complii - Sustainability Insights</title>
+        <meta name="description" content="Learn about Complii's mission and team driving data-backed sustainability solutions for businesses." />
+    </Helmet>
+
     <section>
         {/* About Hero */}
        <div className='flex flex-col lg:flex-row'>
@@ -193,6 +200,7 @@ const About = () => {
             </div>
         </div>
     </section>
+    </>
   )
 }
 

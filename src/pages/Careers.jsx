@@ -35,6 +35,16 @@ const jobRoles = [
 
 const Careers = () => {
   return (
+    <>
+    {/* using Helmet to inject metadata dynamically as route/pages change - its done cos React is a SPA and only has one index.html- This is called page level SEO metadata management */}
+    <Helmet>
+        <title>Careers at Complii — Build the Future of Data & Sustainability</title>
+        <meta
+          name="description"
+          content="Join Complii and help build data-driven sustainability tools for modern businesses. Explore open roles and grow with us."
+        />
+      </Helmet>
+
     <section className="py-10 px-5 space-y-8 hero">
       <h2 className="text-3xl font-bold text-center">Open Roles</h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
@@ -60,6 +70,7 @@ const Careers = () => {
             </button>
           </div>
     </section>
+    </>
   )
 }
 
