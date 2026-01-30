@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import JournalImgOne from "../assets/journal-image1.jpg";
 import JournalImgTwo from "../assets/journal-image2.jpg";
 import JournalImgThree from "../assets/journal-image3.jpg";

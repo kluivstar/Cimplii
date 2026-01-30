@@ -7,6 +7,7 @@ import { LuCircleArrowOutUpRight } from "react-icons/lu";
 import { FaUncharted } from "react-icons/fa";
 import { FaChartPie } from "react-icons/fa6";
 import { FaMagnifyingGlassChart } from "react-icons/fa6";
+import { Helmet } from 'react-helmet';
 
 const teamMembers = [
   {
