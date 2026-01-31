@@ -10,7 +10,7 @@ import JournalHeader from "../assets/journal-header.jpg";
 const journalList = [
   {
     image: JournalImgSix,
-    title: "Real Data for Real Business Impact",
+    title: "dsfa Data for Real Business Impact",
     description:
       "All-in-one sustainability solutions that deliver measurable results for modern businesses.",
     genre: "News",
@@ -72,7 +72,7 @@ const JournalPage = () => {
       </h2>
 
       {/* Journal Content */}
-      <div className="lg:px-24 xl:py-10 xl:pb-20 2xl:w-4/5 grid lg:grid-cols-2 lg:gap-10 mx-auto items-stretch">
+      <div className="lg:px-24 p-10 xl:py-10 xl:pb-20 2xl:w-4/5 grid lg:grid-cols-2 lg:gap-10 mx-auto items-stretch">
 
         {journalList.map((journal, index) => (
             <article
